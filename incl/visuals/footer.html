@@ -1,0 +1,27 @@
+</div>
+<script type="text/javascript">
+$(document).ready(function(){              
+ $(window).resize(function(){
+  $('#url-sh-rectangle').css({
+   position:'absolute',
+   left: ($(window).width() 
+   - $('#url-sh-rectangle').outerWidth())/2,
+   top: ($(window).height() 
+   - $('#url-sh-rectangle').outerHeight())/2
+  });     
+ });
+ $(window).resize();
+});
+</script>
+<script>
+ function checkProtocol(){
+  var address = document.getElementById('urlTake').value;
+  var protocol = address.split("//")[0];
+  if(protocol!="http:" || protocol!="https:"){
+    protocol = "http://";
+    address = protocol + address;
+  }
+ }
+ </script>
+</body>
+</html>
