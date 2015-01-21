@@ -1,6 +1,6 @@
 <?
 function log_ip() {
-	if($_SERVER['REMOTE_ADDR'] !== '77.70.100.163' && $_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {
+	if($_SERVER['REMOTE_ADDR'] !== '127.0.0.1') {
 		$file = 'conqute.txt';
 		$ipadress = $_SERVER['REMOTE_ADDR'];
 		$date = date('d/F/Y h:i:s');
